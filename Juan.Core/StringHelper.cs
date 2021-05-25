@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Juan.Core
 {
-    public class Class1
+    public static class StringHelper
     {
+
     }
 }
