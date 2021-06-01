@@ -36,6 +36,7 @@
       <HintPath>..\..\..\Project\webform\Gao7CMS\SevenCore4.6\Core\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -48,7 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssertHelper.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="ConfigHelper.cs" />
     <Compile Include="DateHelper.cs" />
+    <Compile Include="EncodeHelper.cs" />
     <Compile Include="EnumType.cs" />
     <Compile Include="Http301Exception.cs" />
     <Compile Include="Http500Exception.cs" />
@@ -62,10 +66,14 @@
     <Compile Include="ListHelper.cs" />
     <Compile Include="Md5Helper.cs" />
     <Compile Include="ObjectHelper.cs" />
+    <Compile Include="PathHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderWriterLockHelper.cs" />
+    <Compile Include="ReaderWriterLockSlimHelper.cs" />
     <Compile Include="RegexHelper.cs" />
     <Compile Include="StreamHelper.cs" />
     <Compile Include="StringHelper.cs" />
+    <Compile Include="SysVariable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
