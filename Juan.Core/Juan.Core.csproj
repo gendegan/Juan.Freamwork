@@ -53,6 +53,9 @@
     <Compile Include="ConfigHelper.cs" />
     <Compile Include="DateHelper.cs" />
     <Compile Include="EncodeHelper.cs" />
+    <Compile Include="EnumAttribute.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="EnumInfo.cs" />
     <Compile Include="EnumType.cs" />
     <Compile Include="Http301Exception.cs" />
     <Compile Include="Http500Exception.cs" />

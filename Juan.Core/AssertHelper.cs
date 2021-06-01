@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Juan.Core
 {
+    /// <summary>
+    /// 打断出处理 
+    /// </summary>
     public static class AssertHelper
     {
         // Methods
@@ -16,7 +19,12 @@ namespace Juan.Core
                 throw new ArgumentException(message, paramName);
             }
         }
-
+        /// <summary>
+        /// 参数不为空判断 
+        /// </summary>
+        /// <param name="argumentValue"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void ArgumentNoNull(this object argumentValue, string paramName, string message = "")
         {
             if (argumentValue == null)
@@ -24,7 +32,12 @@ namespace Juan.Core
                 throw new ArgumentNullException(paramName, message);
             }
         }
-
+        /// <summary>
+        /// 参数不为空判断[null ,Empty,WhiteSpace] 
+        /// </summary>
+        /// <param name="argumentValue"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void ArgumentNoNull(this string argumentValue, string paramName, string message = "")
         {
             if (string.IsNullOrWhiteSpace(argumentValue))
@@ -32,7 +45,12 @@ namespace Juan.Core
                 throw new ArgumentNullException(paramName, message);
             }
         }
-
+        /// <summary>
+        /// 参数不为空判断 
+        /// </summary>
+        /// <param name="argumentValue"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void ArgumentNoNullOrEmpty(this string argumentValue, string paramName, string message = "")
         {
             if (string.IsNullOrEmpty(argumentValue))
@@ -92,12 +110,19 @@ namespace Juan.Core
                 throw new Http500Exception(message);
             }
         }
-
+        /// <summary>
+        /// 信息提示
+        /// </summary>
+        /// <param name="hintMessage"></param>
         public static void InfoHintAssert(this string hintMessage)
         {
             throw new InfoHintException(hintMessage);
         }
-
+        /// <summary>
+        /// 信息提示
+        /// </summary>
+        /// <param name="condition"></param>
+        /// <param name="hintMessage"></param>
         public static void InfoHintAssert(this bool condition, string hintMessage)
         {
             if (condition)
@@ -105,7 +130,12 @@ namespace Juan.Core
                 throw new InfoHintException(hintMessage);
             }
         }
-
+        /// <summary>
+        /// 检查前端输入参数 
+        /// </summary>
+        /// <param name="argumentValue"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void InputNoNull(this object argumentValue, string paramName, string message = "")
         {
             if (argumentValue == null)
@@ -114,6 +144,12 @@ namespace Juan.Core
             }
         }
 
+        /// <summary>
+        /// 检查前端输入参数 
+        /// </summary>
+        /// <param name="argumentValue"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void InputNoNull(this string argumentValue, string paramName, string message = "")
         {
             if (string.IsNullOrWhiteSpace(argumentValue))
@@ -121,7 +157,12 @@ namespace Juan.Core
                 InputNullAssert(paramName, message);
             }
         }
-
+        /// <summary>
+        /// 检查前端输入参数 
+        /// </summary>
+        /// <param name="argumentValue"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void InputNoNullOrEmpty(this string argumentValue, string paramName, string message = "")
         {
             if (string.IsNullOrEmpty(argumentValue))
@@ -129,12 +170,21 @@ namespace Juan.Core
                 InputNullAssert(paramName, message);
             }
         }
-
+        /// <summary>
+        /// 前端输入参数异常
+        /// </summary>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void InputNullAssert(string paramName, string message = "")
         {
             throw new InputNullException(paramName, message);
         }
-
+        /// <summary>
+        /// 前端输入参数异常
+        /// </summary>
+        /// <param name="condition"></param>
+        /// <param name="paramName"></param>
+        /// <param name="message"></param>
         public static void InputNullAssert(bool condition, string paramName, string message = "")
         {
             if (condition)

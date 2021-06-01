@@ -9,6 +9,9 @@ using System.Web.Caching;
 
 namespace Juan.Core
 {
+    /// <summary>
+    /// 配置组帮助类
+    /// </summary>
     public class ConfigHelper
     {
         // Fields

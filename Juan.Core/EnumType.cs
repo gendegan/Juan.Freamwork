@@ -35,6 +35,14 @@ namespace Juan.Core
         StampSecond
     }
 
+    public enum ShowEnumType
+    {
+        Value,
+        Description,
+        Key
+    }
+
+
 
 
 
