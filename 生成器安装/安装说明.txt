@@ -1,0 +1,5 @@
+在对应系统的vs ide目录下：
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE
+执行VSIXInstaller.exe 安装JuanGenerate.vsix
+
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE>VSIXInstaller.exe D:\MyFile\Juan.Freamwork\生成器安装\JuanGenerate.vsix

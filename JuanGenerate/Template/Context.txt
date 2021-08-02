@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using {5}.Core;
+using {5}.Data;
+using {2}.Entity;
+namespace {2}.Context
+{{
+    /// <summary>
+    /// {4}上下文
+    /// </summary>
+    public partial class {0}Context : DataContext<{0}, {1}>
+    {{
+
+
+
+{3}
+
+
+    }}
+}}

@@ -1,0 +1,9 @@
+<GenerateConfig SharePath="" FrameworkName="Juan">
+  <ConnectionStrings>
+    <ConnectionString Name="Gao7.BiZhi.ConnectionString" ServerIP="192.168.100.154" Uid="gao7test" Pwd="gao7test" Port="33081" Database="gao7bizhi" DbType="MySql" ContextKey="" />
+  </ConnectionStrings>
+  <ContextConfig>
+    <Context TableName="bizhi_wxbgvideo_tb" TableFormat="bizhi_wxbgvideo_{0}_tb" EntityName="Wxbgvideo" ViewFormat="bizhi_wxbgvideo_{0}_vw" ViewName="bizhi_wxbgvideo_vw" Description="微信背景视频" ConnectionKey="Gao7.BiZhi.ConnectionString" ContextKey="Gao7.BiZhi" UIProjectName="" UIProjectPath="" EditUrl="" ListUrl="" ModuleID="" />
+    <Context TableName="bizhi_alishop_tb" TableFormat="bizhi_alishop_{0}_tb" EntityName="Alishop" ViewFormat="bizhi_alishop_{0}_vw" ViewName="bizhi_alishop_vw" Description="壁纸淘宝电商推荐信息" ConnectionKey="Gao7.BiZhi.ConnectionString" ContextKey="Gao7.BiZhi" UIProjectName="" UIProjectPath="" EditUrl="" ListUrl="" ModuleID="" />
+  </ContextConfig>
+</GenerateConfig>

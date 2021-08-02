@@ -1,0 +1,25 @@
+﻿ 
+
+		/// <summary>
+        /// 新增
+        /// </summary>
+        /// <param name="value">值</param>
+        /// <returns></returns>
+        public override int Add({0} value)
+        {{  
+{1}
+            return base.Add(value);
+        }}
+
+		/// <summary>
+        /// 修改
+        /// </summary>
+        /// <param name="value">值</param>
+        /// <param name="fields">需要更新的字段</param>
+        /// <returns></returns>
+        public override int Update({0} value, params string[] fields)
+        {{
+{1}
+            return base.Update(value, fields);
+        }}
+ 

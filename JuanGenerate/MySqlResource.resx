@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GetTableColumns" xml:space="preserve">
+    <value>SELECT  
+TABLE_NAME as TableName,
+COLUMN_NAME AS FieldName ,
+DATA_TYPE   AS DataType, CASE WHEN  POSITION( 'unsigned'IN COLUMN_TYPE)&gt;0
+ THEN 1 ELSE 0 END AS IsUnsigned,
+COLUMN_COMMENT as Description,
+CASE WHEN IS_NULLABLE ='YES' 
+ THEN 1 ELSE 0 END   as IsNullable,
+CASE WHEN COLUMN_KEY ='PRI' 
+ THEN 1 ELSE 0 END   as IsKey,
+
+ 
+ CASE WHEN EXTRA ='auto_increment'
+  
+ THEN 1 ELSE 0 END AS Identity,
+
+CASE WHEN CHARACTER_MAXIMUM_LENGTH is not NULL
+  
+ THEN CHARACTER_MAXIMUM_LENGTH
+ 
+ ELSE 0 END AS Length
+
+  FROM INFORMATION_SCHEMA.COLUMNS   where table_name=?TableName  and TABLE_SCHEMA=?TableSchema</value>
+    <comment>获取表的结构信息</comment>
+  </data>
+  <data name="GetTableForeign" xml:space="preserve">
+    <value>SELECT
+  CONSTRAINT_CATALOG,
+  CONSTRAINT_SCHEMA,
+  CONSTRAINT_NAME ,
+  TABLE_CATALOG,
+  TABLE_SCHEMA,
+  TABLE_NAME  as PrimaryTableName,
+  COLUMN_NAME as PrimaryColumnName,
+  ORDINAL_POSITION,
+  POSITION_IN_UNIQUE_CONSTRAINT,
+  REFERENCED_TABLE_SCHEMA,
+  REFERENCED_TABLE_NAME as ForeignTableName,
+  REFERENCED_COLUMN_NAME as ForeignColumnName
+FROM information_schema.KEY_COLUMN_USAGE where table_name=?TableName
+  and  CONSTRAINT_SCHEMA=?TableSchema  and REFERENCED_COLUMN_NAME is not  null</value>
+    <comment>获取表的外键</comment>
+  </data>
+  <data name="GetTables" xml:space="preserve">
+    <value>SELECT
+  TABLE_CATALOG,
+  TABLE_SCHEMA,
+  TABLE_NAME as TableName,
+  TABLE_TYPE,
+  ENGINE,
+  VERSION,
+  ROW_FORMAT,
+  TABLE_ROWS,
+  AVG_ROW_LENGTH,
+  DATA_LENGTH,
+  MAX_DATA_LENGTH,
+  INDEX_LENGTH,
+  DATA_FREE,
+  AUTO_INCREMENT,
+  CREATE_TIME,
+  UPDATE_TIME,
+  CHECK_TIME,
+  TABLE_COLLATION,
+  CHECKSUM,
+  CREATE_OPTIONS,
+  TABLE_COMMENT as Description 
+FROM information_schema.TABLES  where TABLE_TYPE=?TableType and  TABLE_SCHEMA=?TableSchema</value>
+    <comment>获取表结构信息</comment>
+  </data>
+</root>

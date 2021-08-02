@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24875FF7-261E-4F2C-9E36-EF12966DB655}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Juan.Data.ESearch</RootNamespace>
+    <AssemblyName>Juan.Data.ESearch</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll库\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PlainElastic7.Net">
+      <HintPath>..\dll库\PlainElastic7.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliasesActions.cs" />
+    <Compile Include="ESearhConfig\ESearchSection.cs" />
+    <Compile Include="ESHelper.Add.cs" />
+    <Compile Include="ESHelper.AddRouting.cs" />
+    <Compile Include="ESHelper.cs" />
+    <Compile Include="ESHelper.Delete.cs" />
+    <Compile Include="ESHelper.DeleteRouting.cs" />
+    <Compile Include="ESHelper.Group.cs" />
+    <Compile Include="ESHelper.Index.cs" />
+    <Compile Include="ESHelper.Select.cs" />
+    <Compile Include="ESHelper.SelectField.cs" />
+    <Compile Include="ESHelper.SelectTable.cs" />
+    <Compile Include="ESHelper.Update.cs" />
+    <Compile Include="ESHelper.UpdateAdd.cs" />
+    <Compile Include="ESHelper.UpdateAddRouting.cs" />
+    <Compile Include="ESHelper.UpdateRouting.cs" />
+    <Compile Include="ESQuery.Add.cs" />
+    <Compile Include="ESQuery.AddRouting.cs" />
+    <Compile Include="ESQuery.cs" />
+    <Compile Include="ESQuery.Delete.cs" />
+    <Compile Include="ESQuery.DeleteRouting.cs" />
+    <Compile Include="ESQuery.Group.cs" />
+    <Compile Include="ESQuery.Query.cs" />
+    <Compile Include="ESQuery.SelectField.cs" />
+    <Compile Include="ESQuery.Table.cs" />
+    <Compile Include="ESQuery.Update.cs" />
+    <Compile Include="ESQuery.UpdateRouting.cs" />
+    <Compile Include="OperationOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result\NullHits.cs" />
+    <Compile Include="Result\QueryResult.cs" />
+    <Compile Include="RoutingData.cs" />
+    <Compile Include="RoutingDelete.cs" />
+    <Compile Include="SearchOptionInfo.cs" />
+    <Compile Include="UpdateScript.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ESearhConfig\ESearchConfig.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Juan.Core\Juan.Core.csproj">
+      <Project>{3ea82e72-4386-408c-bc63-e210314793b0}</Project>
+      <Name>Juan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Juan.Data\Juan.Data.csproj">
+      <Project>{25e14f9e-d8b7-4014-b2a9-00f5be1b8605}</Project>
+      <Name>Juan.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Juan.Log\Juan.Log.csproj">
+      <Project>{5cf7bd84-287b-479a-8287-4304414d4038}</Project>
+      <Name>Juan.Log</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
