@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <connectionStrings>
+    <add name="SevenConnectionString" connectionString="SERVER=192.168.100.154;Port=33081;Database=gao7manage;Uid=gao7test;Pwd=gao7test;persist security info=True;Allow User Variables=True;Charset=utf8;"/>
+  </connectionStrings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+</configuration>

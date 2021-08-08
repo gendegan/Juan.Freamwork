@@ -1,0 +1,460 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+  <configSections>
+    <section name="ContextConfig" type="Seven.Core.ContextSection,Juan.Core"/>
+  </configSections>
+
+  <ContextConfig>
+    
+    <Context Name="Seven" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=gao7manage;Uid=gao7manage;Pwd=manage112233;persist security info=True;Allow User Variables=True;Charset=utf8;">
+    </Context>
+    <Context Name="Seven.Power" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=gao7manage;Uid=gao7manage;Pwd=manage112233;persist security info=True;Allow User Variables=True;Charset=utf8;">
+    </Context>
+    <Context Name="Seven.Log" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=gao7manage;Uid=gao7manage;Pwd=manage112233;persist security info=True;Allow User Variables=True;Charset=utf8;">
+    </Context>
+    <Context Name="Seven.File" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=gao7manage;Uid=gao7manage;Pwd=manage112233;persist security info=True;Allow User Variables=True;Charset=utf8;">
+    </Context>
+
+	<Context Name="Seven.Studio" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevenstudio;Uid=sevenstudio;Pwd=MycUikm07bmF8wqxxsZGxQxz;persist security info=True;Allow User Variables=True;Charset=utf8;">
+    </Context>
+
+    <Context Name="Seven.Pay" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevenpay;Uid=sevenpay;Pwd=QV7BKCwvFJ3T;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevenpay;Uid=sevenpay;Pwd=QV7BKCwvFJ3T;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Pay.Data" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevenpaydata;Uid=sevenpay;Pwd=QV7BKCwvFJ3T;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevenpaydata;Uid=sevenpay;Pwd=QV7BKCwvFJ3T;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Comments" ConnectionString="SERVER=10.19.121.211;Port=3320;database=sevencomment;Uid=sevencomment;Pwd=SIH56DWLysdDRazx;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevencomment;Uid=sevencomment;Pwd=SIH56DWLysdDRazx;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.ShortUrl" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Ad" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevenad;Uid=sevenad;Pwd=diZxaXqKnyFCUUhi;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevenad;Uid=sevenad;Pwd=diZxaXqKnyFCUUhi;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Notify" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Captcha" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Data" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=sevendata;Uid=sevendata;Pwd=cSA8BKI5wth6eC7o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Integrate.Data" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_data;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_data;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.0" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_0;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_0;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.1" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_1;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_1;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.2" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_2;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_2;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.3" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_3;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_3;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.4" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_4;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_4;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.5" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_5;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_5;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.6" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_6;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_6;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.7" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_7;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_7;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.8" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_8;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_8;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Integrate.UserData.9" ConnectionString="SERVER=10.19.121.211;Port=3320;Database=ing_userdata_9;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3320;Database=ing_userdata_9;Uid=ingdata;Pwd=cSA1BKI5cgu1aC8o;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Counter" ConnectionString="SERVER=10.19.121.211;Port=3312;database=gao7counter;Uid=gao7counter;Pwd=counter;Allow User Variables=True;Charset=utf8;SslMode=none;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3312;Database=gao7counter;Uid=gao7counter;Pwd=counter;Allow User Variables=True;Charset=utf8;SslMode=none;"/>
+    </Context>
+
+    <Context Name="Gao7.CMS" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.CmsPlus" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.App" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Activity" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.WoChao" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7wc;Uid=gao7wc;Pwd=wc!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7wc;Uid=gao7wc;Pwd=wc!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Game" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7game;Pwd=game112233;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7game;Pwd=game112233;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Card" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=card;Pwd=card123654;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=card;Pwd=card123654;database=gao7app;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Graph" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7graph;Pwd=gao7graph112233;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7graph;Pwd=gao7graph112233;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.TopRated" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7top;Uid=gao7top;Pwd=gao7top456;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7top;Uid=gao7top;Pwd=gao7top456;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Counter" ConnectionString="SERVER=10.19.121.211;Port=3352;database=gao7counter;Uid=gao7counter;Pwd=counter;Allow User Variables=True;Charset=utf8;SslMode=none;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7counter;Uid=gao7counter;Pwd=counter;Allow User Variables=True;Charset=utf8;SslMode=none;"/>
+    </Context>
+
+    <Context Name="Gao7.Counters" ConnectionString="SERVER=10.19.121.211;Port=3352;database=gao7counter;Uid=gao7counter;Pwd=counter;Allow User Variables=True;Charset=utf8;SslMode=none;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7counter;Uid=gao7counter;Pwd=counter;Allow User Variables=True;Charset=utf8;SslMode=none;"/>
+    </Context>
+
+    <Context Name="Gao7.Link" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7fav;Uid=gao7fav;Pwd=112233;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7fav;Uid=gao7fav;Pwd=112233;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.AppComment" ConnectionString="SERVER=10.19.121.211;Port=3308;database=gao7comment;Uid=gao7comment;Pwd=112233; Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7comment;Uid=gao7comment;Pwd=112233; Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.UserCenter" ConnectionString="SERVER=10.19.121.211;Port=3311;Database=gao7usercenter;Uid=usercenter;Pwd=usercenter112233;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3311;Database=gao7usercenter;Uid=usercenter;Pwd=usercenter112233;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.WeiXin" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7weixin;Uid=gao7weixin;Pwd=Zwe9KjabshSags12;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7weixin;Uid=gao7weixin;Pwd=Zwe9KjabshSags12;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Statistics" ConnectionString="SERVER=10.19.121.211;Port=3312;Database=statistics;Uid=statistics;pwd=112233;Charset=utf8;Allow User Variables=True;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3312;Database=statistics;Uid=statistics;pwd=112233;Charset=utf8;Allow User Variables=True;"/>
+    </Context>
+
+	<Context Name="Gao7.StatisticsLog" ConnectionString="SERVER=10.19.121.211;Port=3312;Database=statisticslog;Uid=statistics;pwd=112233;Charset=utf8;Allow User Variables=True;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3312;Database=statisticslog;Uid=statistics;pwd=112233;Charset=utf8;Allow User Variables=True;"/>
+    </Context>
+
+    <Context Name="Gao7.Push" ConnectionString="SERVER=10.19.121.211;Port=3311;Database=gao7push;Uid=gao7push;Pwd=112233;Charset=utf8;Allow User Variables=True;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3311;Database=gao7push;Uid=gao7push;Pwd=112233;Charset=utf8;Allow User Variables=True;"/>
+    </Context>
+
+    <!-- <Context Name="Gao7.Gao7UserApp" ConnectionString="SERVER=122.114.51.78;Port=3310;Database=gao7userapp;Uid=gao7userapp;Pwd=112233;Charset=utf8;Allow User Variables=True;" >
+      <Read ConnectionString="SERVER=10.19.3.53;Port=3310;Database=gao7userapp;Uid=gao7userapp;Pwd=112233;Charset=utf8;Allow User Variables=True;" />
+    </Context> -->
+
+    <Context Name="Gao7.RedeemActivity" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.BiZhi" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7bizhi;Uid=gao7bizhi;Pwd=bizhi!@#;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7bizhi;Uid=gao7bizhi;Pwd=bizhi!@#;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="BiZhi.Statistics" ConnectionString="SERVER=10.19.121.211;Port=3309;Database=gao7bizhistatistics;Uid=gao7bizhi_log;Pwd=I2kYPv1oWWWzWsNUvdWGtCh0;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.121.211;Port=3309;Database=gao7bizhistatistics;Uid=gao7bizhi_log;Pwd=I2kYPv1oWWWzWsNUvdWGtCh0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.BiZhi.Solr" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7bizhi;Uid=gao7bizhi;Pwd=bizhi!@#;Allow User Variables=True;Charset=utf8;">
+	</Context>
+	
+	<Context Name="BiZhi.Manage" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=bizhi_manage;Uid=bizhi_manage;Pwd=oDlAECSA3dvLpAwLvWTbdSuc;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=bizhi_manage;Uid=bizhi_manage;Pwd=oDlAECSA3dvLpAwLvWTbdSuc;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Lottery" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7fav;Uid=gao7lottery;Pwd=lottery!@#;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7fav;Uid=gao7lottery;Pwd=lottery!@#;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <!-- <Context Name="Gao7.App.Card" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7wx;Uid=gao7wx;Pwd=wx!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7wx;Uid=gao7wx;Pwd=wx!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context> --> 
+
+    <Context Name="Gao7.Track" ConnectionString="SERVER=10.19.121.211;Port=3312;database=startuplog;Uid=statistics;Pwd=112233;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3312;database=startuplog;Uid=statistics;Pwd=112233;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.NewGame" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Bell" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7ring;Uid=gao7ring;Pwd=bell7788123;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7ring;Uid=gao7ring;Pwd=bell7788123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Miaozs" ConnectionString="SERVER=10.19.121.211;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3352;Database=gao7app;Uid=gao7app;Pwd=app!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.WorldCup" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7worldcup;Uid=gao7worldcup;Pwd=worldcup!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7worldcup;Uid=gao7worldcup;Pwd=worldcup!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Wiki" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7wiki;Uid=gao7wiki;Pwd=wiki!@#135;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7wiki;Uid=gao7wiki;Pwd=wiki!@#135;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.SDKAdvert" ConnectionString="SERVER=10.19.121.211;Port=3325;Database=gao7sdk;Uid=gao7sdk;Pwd=sdk!@#246;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3325;Database=gao7sdk;Uid=gao7sdk;Pwd=sdk!@#246;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+
+
+    <!--直接读库-->
+    <!-- <Context Name="Gao7.Analytics" ConnectionString="SERVER=10.19.126.20;Port=3309;Database=gao7analytics;Uid=analytics;Pwd=analytics147;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3309;Database=gao7analytics;Uid=analytics;Pwd=analytics147;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <Context Name="Gao7.Welfare" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7welfare;Uid=gao7welfare;Pwd=welfare135975;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7welfare;Uid=gao7welfare;Pwd=welfare135975;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.GameRss" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7gamerss;Uid=gamerss;Pwd=gamerss7887;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7gamerss;Uid=gamerss;Pwd=gamerss7887;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <!-- <Context Name="Gao7.Gao7UserAppNew" ConnectionString="SERVER=10.41.51.78;Port=3310;Database=gao7installedapp;Uid=gao7installedapp;Pwd=app123654;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.41.51.78;Port=3310;Database=gao7installedapp;Uid=gao7installedapp;Pwd=app123654;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <!-- androidCn 3305-->
+    <!-- <Context Name="Gao7.Android" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7android;User=android;Password=android112233;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7android;User=android_read;Password=4D9V13SBfesj;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.AndroidCN" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7androidcn;Uid=androidcn;Pwd=androidcn112233;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7androidcn;Uid=androidcn_read;Pwd=PLarNC756w9g;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.AndroidCNLog" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7androcnlog;Uid=androidcn;Pwd=androidcn112233;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7androcnlog;Uid=androidcn_read;Pwd=PLarNC756w9g;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.AndroidCNAnalysis" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7analysis;Uid=gao7analysis;Pwd=analysis147;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7analysis;Uid=gao7analysis_r;Pwd=z5Mt8F2k7fGX;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <!-- 微信精选 -->
+    <!-- <Context Name="Gao7.TopWeiXin" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7topwx;Uid=gao7topwx;Pwd=Agao7@topwx!@#3219;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7topwx;Uid=gao7topwx_read;Pwd=NWy4GrgQ852t;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.TopWeiXinLog" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7topwxlog;Uid=gao7topwxlog;Pwd=Bgao7@topwxlog!@#3218;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7topwxlog;Uid=gao7topwxlog_r;Pwd=XHJSy70r64ke;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <!--短视频-->
+    <!-- <Context Name="Gao7.ShortVideo" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7shortvideo;Uid=gao7shortvideo;Pwd=HcYpQ6yR65BR9VHDkJ59VbZZ;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7shortvideo;Uid=gao7shortvideo_r;Pwd=EEVSb7znG5vgAjpbs7PhK57P;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <!-- Gao7Ip -->
+    <!-- <Context Name="Seven.IP" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7ip;Uid=gao7ip;Pwd=Bg6oeesdkplat#32pwx45;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7ip;Uid=gao7ip;Pwd=Bg6oeesdkplat#32pwx45;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <!-- 今日娱乐头条 -->
+    <!-- <Context Name="Gao7.Ent" ConnectionString="SERVER=10.19.126.20;Port=3305;Database=gao7ent;Uid=gao7ent;Pwd=gao7ent#@!;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3305;Database=gao7ent;Uid=gao7ent_read;Pwd=gao7ent_read#@!;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <Context Name="Gao7.WelfareUCenter" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7welfare;Uid=gao7welfare;Pwd=welfare135975;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7welfare;Uid=gao7welfare;Pwd=welfare135975;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Pack" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7pack;Uid=gao7pack;Pwd=pack123gao;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7pack;Uid=gao7pack;Pwd=pack123gao;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Seven.Stat" ConnectionString="SERVER=10.19.121.211;Port=3351;Database=sevenstat;Uid=sevenstat;Pwd=sevenstat7788;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3351;Database=sevenstat;Uid=sevenstat;Pwd=sevenstat7788;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Zone" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Special"  ConnectionString="SERVER=10.19.121.211;Port=3306;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3306;Database=gao7news;Uid=gao7news;Pwd=news!@#123;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Meitu.Wumao" ConnectionString="SERVER=10.19.104.214;Port=3306;Database=meitu;Uid=meitu;Pwd=meitu12378;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.104.214;Port=3306;Database=meitu;Uid=meitu;Pwd=meitu12378;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <!-- <Context Name="Gao7.BiZhiLog"  ConnectionString="SERVER=10.19.126.20;Port=3310;Database=gao7bizhilog;Uid=gao7bizhilog;Pwd=bizhilog78;Charset=utf8;Allow User Variables=True;" >
+      <Read  ConnectionString="SERVER=10.19.3.53;Port=3310;Database=gao7bizhilog;Uid=gao7bizhilog;Pwd=bizhilog78;Charset=utf8;Allow User Variables=True;" />
+    </Context> -->
+
+    <Context Name="Gao7.LowPriceBidding"  ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7lowbid;Uid=gao7lowbid;Pwd=gao7lowbid456;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3307;Database=gao7lowbid;Uid=gao7lowbid;Pwd=gao7lowbid456;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <!-- <Context Name="Gao7.AppRank" ConnectionString="SERVER=10.255.10.105;Port=3321;Database=gao7aso;Uid=gao7aso;Pwd=gao7aso7878;Allow User Variables=True;Charset=utf8;">
+	  <Read  ConnectionString="SERVER=10.255.10.105;Port=3321;Database=gao7aso;Uid=gao7aso;Pwd=gao7aso7878;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <Context Name="Gao7.OneIndiana"  ConnectionString="SERVER=10.19.121.211;Port=3307;Database=oneindiana;Uid=oneindiana;Pwd=Akk3KjtushSgspT6;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3307;Database=oneindiana;Uid=oneindiana;Pwd=Akk3KjtushSgspT6;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.JfDuobao"  ConnectionString="SERVER=10.19.121.211;Port=3308;Database=jfduobao;Uid=jfduobao;Pwd=abc3djtushSgspT6;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=jfduobao;Uid=jfduobao;Pwd=abc3djtushSgspT6;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.VR" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7vr;Uid=gao7vr;Pwd=abc3djtu12SgabT6;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7vr;Uid=gao7vr;Pwd=abc3djtu12SgabT6;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.DiyStore" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7diystore;Uid=gao7diystore;Pwd=zxc3djtu56ScabT7;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7diystore;Uid=gao7diystore;Pwd=zxc3djtu56ScabT7;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.H5Game" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7h5;Uid=gao7h5;Pwd=Zkk3KjabshSgsp67;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3307;Database=gao7h5;Uid=gao7h5;Pwd=Zkk3KjabshSgsp67;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <!-- <Context Name="Gao7.BBS" ConnectionString="SERVER=10.19.126.20;Port=3314;Database=gao7bbs;Uid=gao7hubble;Pwd=hubblegao7gao8;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.126.20;Port=3314;Database=gao7bbs;Uid=gao7hubble;Pwd=hubblegao7gao8;Allow User Variables=True;Charset=utf8;"/>
+    </Context> -->
+
+    <Context Name="Gao7.PokemonGo" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7poke;Uid=pokemongo;Pwd=qwe3djtu12SgabT6;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7poke;Uid=pokemongo;Pwd=qwe3djtu12SgabT6;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <Context Name="Gao7.Driving" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7driving;Uid=gao7driving;Pwd=Zll3KjabshSgsp12;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7driving;Uid=gao7driving;Pwd=Zll3KjabshSgsp12;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.Dining" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=dining;Uid=dining;Pwd=abc8djtu12SgabT0;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3307;Database=dining;Uid=dining;Pwd=abc8djtu12SgabT0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.ChildSong" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7childsong;Uid=gao7childsong;Pwd=zxc8djtu56SgabT0;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7childsong;Uid=gao7childsong;Pwd=zxc8djtu56SgabT0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.PrizeClaw" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7prizeclaw;Uid=gao7prizeclaw;Pwd=qwe8djtu12SgabT0;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7prizeclaw;Uid=gao7prizeclaw;Pwd=qwe8djtu12SgabT0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.WeiXinApp" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7weixinapp;Uid=gao7weixinapp;Pwd=qwe1djtu56SgabT0;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3307;Database=gao7weixinapp;Uid=gao7weixinapp;Pwd=qwe1djtu56SgabT0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Seven.Activity" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=sevenactivity;Uid=sevenactivity;Pwd=zxc1djtu12SabcT9;Allow User Variables=True;Charset=utf8;">
+      <Read  ConnectionString="SERVER=10.19.81.190;Port=3307;Database=sevenactivity;Uid=sevenactivity;Pwd=zxc1djtu12SabcT9;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.WeiXinMini" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7weixinmini;Uid=gao7weixinmini;Pwd=zxc1sldk90SgabT0;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7weixinmini;Uid=gao7weixinmini;Pwd=zxc1sldk90SgabT0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Gao7.WeiXinMini.Solr" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7weixinmini;Uid=gao7weixinmini;Pwd=zxc1sldk90SgabT0;Allow User Variables=True;Charset=utf8;">
+    </Context>
+
+	<Context Name="Gao7.BBDianJing" ConnectionString="SERVER=10.19.121.211;Port=3306;Database=bbdjgrab;Uid=bbdjgrab;Pwd=abc1sldk12SgzxT7;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3306;Database=bbdjgrab;Uid=bbdjgrab;Pwd=abc1sldk12SgzxT7;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.Joke" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7joke;Uid=gao7joke;Pwd=123guk78xvSg47T0;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7joke;Uid=gao7joke;Pwd=123guk78xvSg47T0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.WxGameBox" ConnectionString="SERVER=10.19.121.211;Port=3308;Database=gao7gamebox;Uid=gao7gamebox;Pwd=321abc78xvSg47T0;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3308;Database=gao7gamebox;Uid=gao7gamebox;Pwd=321abc78xvSg47T0;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<Context Name="Gao7.CreditsWall" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=welfarewall;Uid=gao7driving;Pwd=Zll3KjabshSgsp12;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.121.211;Port=3307;Database=welfarewall;Uid=gao7driving;Pwd=Zll3KjabshSgsp12;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<!--社区-->
+	<Context Name="Seven.Community" ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7community;Uid=gao7community;Pwd=Z742KjabshSabc56;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.121.211;Port=3307;Database=gao7community;Uid=gao7community;Pwd=Z742KjabshSabc56;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Seven.NewCommunity" ConnectionString="SERVER=10.19.121.211;Port=3317;Database=community;Uid=gao7community;Pwd=Z742KjabshSabc56;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3317;Database=community;Uid=gao7community;Pwd=Z742KjabshSabc56;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="NewCommunity.Manage" ConnectionString="SERVER=10.19.121.211;Port=3317;Database=community_manage;Uid=clubmanage;Pwd=u17ms1nb6RtfIGrzWyyGyZir;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3317;Database=community_manage;Uid=clubmanage;Pwd=u17ms1nb6RtfIGrzWyyGyZir;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Seven.Club" ConnectionString="SERVER=10.19.121.211;Port=3317;Database=sevenclub;Uid=gao7community;Pwd=Z742KjabshSabc56;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3317;Database=sevenclub;Uid=gao7community;Pwd=Z742KjabshSabc56;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Club.Manage" ConnectionString="SERVER=10.19.121.211;Port=3317;Database=sevenclub_manage;Uid=clubmanage;Pwd=u17ms1nb6RtfIGrzWyyGyZir;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3317;Database=sevenclub_manage;Uid=clubmanage;Pwd=u17ms1nb6RtfIGrzWyyGyZir;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<!--僵小鱼-->
+	<Context Name="CorpseJiang.Data" ConnectionString="SERVER=10.19.74.90;Port=3306;Database=corpsejiang;Uid=corpsejiang;Pwd=a496KjabshSabc01;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.74.90;Port=3306;Database=corpsejiang;Uid=corpsejiang;Pwd=a496KjabshSabc01;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<!--小宠来了-->
+	<Context Name="Pet.Data" ConnectionString="SERVER=10.19.56.132;Port=3306;Database=pet;Uid=pet;Pwd=MycUikm07bmF8wqBvVZGxQxz;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.56.132;Port=3306;Database=pet;Uid=pet;Pwd=MycUikm07bmF8wqBvVZGxQxz;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<!--小宠的店-->
+	<Context Name="Pet.MallData" ConnectionString="SERVER=10.19.56.132;Port=3306;Database=petmall;Uid=pet;Pwd=MycUikm07bmF8wqBvVZGxQxz;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.56.132;Port=3306;Database=petmall;Uid=pet;Pwd=MycUikm07bmF8wqBvVZGxQxz;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<!--商城-->
+	<Context Name="Seven.ShoppingMall" ConnectionString="SERVER=10.19.168.244;Port=3306;Database=shoppingmall;Uid=shoppingmall;Pwd=4YHQSZqkMejNleW33zDL6d2j;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.168.244;Port=3306;Database=shoppingmall;Uid=shoppingmall;Pwd=4YHQSZqkMejNleW33zDL6d2j;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="ShoppingMall.Manage" ConnectionString="SERVER=10.19.168.244;Port=3306;Database=shoppingmall_manage;Uid=shopmanage;Pwd=DrOkUF60GWfaO9yUTeI3CS7;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.168.244;Port=3306;Database=shoppingmall_manage;Uid=shopmanage;Pwd=DrOkUF60GWfaO9yUTeI3CS7;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+	<!--歪瓜-->
+	<Context Name="WaiGua.MiniMall" ConnectionString="SERVER=10.19.19.100;Port=3306;Database=waiguamall;Uid=waiguamall;Pwd=DiKL5DY9Er1m8XdS9DFp2WCq;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.19.100;Port=3306;Database=waiguamall;Uid=waiguamall;Pwd=DiKL5DY9Er1m8XdS9DFp2WCq;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="YiKaoPai.MiniMall" ConnectionString="SERVER=10.19.19.100;Port=3306;Database=yikaopai;Uid=yikaopai;Pwd=DrOkUFxxxwt8gTaO9yUTeI37;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.19.100;Port=3306;Database=yikaopai;Uid=yikaopai;Pwd=DrOkUFxxxwt8gTaO9yUTeI37;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Gao7.MiniMall" ConnectionString="SERVER=10.19.19.100;Port=3306;Database=gao7mall;Uid=gao7mall;Pwd=erOkUFxx7788gTaO9yUTeI12;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.19.100;Port=3306;Database=gao7mall;Uid=gao7mall;Pwd=erOkUFxx7788gTaO9yUTeI12;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+    <!--小程序推送-->
+	<Context Name="MiniPush.Manage" ConnectionString="SERVER=10.19.121.211;Port=3321;Database=minipush_manage;Uid=minipushmanage;Pwd=THzPrXxvIcOXPxDmMc7JhyYd;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3321;Database=minipush_manage;Uid=minipushmanage;Pwd=THzPrXxvIcOXPxDmMc7JhyYd;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+	<Context Name="Seven.MiniPush" ConnectionString="SERVER=10.19.121.211;Port=3321;Database=minipush;Uid=gao7minipush;Pwd=VAllUAgLfz6j6AzIhrZ9VJCz;Allow User Variables=True;Charset=utf8;">
+      <Read ConnectionString="SERVER=10.19.81.190;Port=3321;Database=minipush;Uid=gao7minipush;Pwd=VAllUAgLfz6j6AzIhrZ9VJCz;Allow User Variables=True;Charset=utf8;"/>
+    </Context>
+
+  </ContextConfig>
+
+  <system.web>
+    <compilation debug="true" targetFramework="4.0" />
+  </system.web>
+</configuration>

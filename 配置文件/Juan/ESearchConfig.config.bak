@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <configSections>
+      <section name="ESearchConfig" type="Seven.Data.ESearch.ESearchSection,Seven.Data.ESearch"/>
+	  <section name="ESearch7Config" type="Seven.Data.ESearch7.ESearchSection,Seven.Data.ESearch7"/>
+  </configSections>
+  <ESearchConfig>
+      <Provider Name="logdata" ServerUrl="http://10.19.72.160:9200" />   
+      <Provider Name="Seven.Stat" ServerUrl="http://10.19.72.160:9200" />   
+      <Provider Name="seven" ServerUrl="http://10.19.72.160:9200" />
+      <!-- <Provider Name="asodata" ServerUrl="https://asoes:Z4eSN7pFH3aPPqauuR2xZdUJ@es.inside.guoaso.com:19200" SslPath="C:\sslcrt\aso.crt" /> -->
+	  <!-- <Provider Name="asodata" ServerUrl="http://asoes:Z4eSN7pFH3aPPqauuR2xZdUJ@es.inside.guoaso.com:19200" /> -->
+	  <!-- <Provider Name="asodata" ServerUrl="http://192.168.100.151:9200/" /> -->
+	  <Provider Name="Integrate.Data" ServerUrl="http://10.19.72.160:9200/" />
+  </ESearchConfig>
+  <ESearch7Config>
+      <Provider Name="ingdata" ServerUrl="http://admin:JwFa6BSq6ypxUpF@tianzhi-elastic.gao7.com" />
+	  <Provider Name="bizhi" ServerUrl="http://admin:JwFa6BSq6ypxUpF@tianzhi-elastic.gao7.com" />
+  </ESearch7Config>
+  <system.web>
+    <compilation debug="true" targetFramework="4.0" />
+  </system.web>
+</configuration>
