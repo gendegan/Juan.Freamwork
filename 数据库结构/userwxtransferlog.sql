@@ -1,0 +1,20 @@
+CREATE TABLE `bizhi_userwxtransferlog_tb` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '标识ID',
+  `GUID` VARCHAR(36) DEFAULT '' COMMENT 'GUID',
+  `UserID` INT(11) DEFAULT NULL COMMENT 'UserID',
+  `TransferBatchID` INT(11) DEFAULT '0' COMMENT '转账批次',
+  `TransferType` INT(11) DEFAULT '0' COMMENT '绑定类型(1-最美绑定 2-主版本导量)',
+  `WxOpenID` VARCHAR(100) DEFAULT '' COMMENT '微信openID',
+  `BzOpenID` VARCHAR(100) DEFAULT '' COMMENT '壁纸g7udid',
+  `TotalFee` DECIMAL(11,2) DEFAULT '0.00' COMMENT '支付额度',
+  `PaymentNo` VARCHAR(100) DEFAULT '' COMMENT '微信交易订单',
+  `MerchantNo` VARCHAR(100) DEFAULT '' COMMENT '平台支付订单',
+  `TradeDesc` VARCHAR(100) DEFAULT '' COMMENT '支付描述',
+  `NotifyUrl` VARCHAR(500) DEFAULT '' COMMENT '微信openID',
+  `CommodityID` INT(11) DEFAULT '0' COMMENT '商户id',
+  `TradeStatus` INT(11) DEFAULT '0' COMMENT '转账状态(1转账中，2转账成功 3转账失败)',
+  `ChannelID` INT(11) DEFAULT '0' COMMENT '渠道id',
+  `TransferTime` DATETIME DEFAULT '1900-01-01 00:00:00' COMMENT '最后一次绑定时间',
+  PRIMARY KEY (`ID`),
+  KEY `WxOpenID` (`WxOpenID`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8 COMMENT='壁纸用户转账记录'
